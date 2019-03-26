@@ -35,7 +35,58 @@ function it(description, contents){
   // \___/\____/_/ /_/____/\__/_/   \__,_/\___/\__/\____/_/  /____/
   //
   // Only add code to *THIS* section!
-  
+
+    //classes 
+
+    class Dog {
+      constructor(obj) {
+        this.color = "",
+        this.status = "normal",
+        this.hungry,
+        this.owner
+        if(obj){
+            if(obj.hasOwnProperty('color')){
+                this.color = obj.color
+            }else{
+                this.color = 'black'
+            }
+        }
+        if(obj){
+            if(obj.hasOwnProperty('hungry')){
+                this.hungry = obj.hungry
+            }else{
+                this.hungry = true
+            }
+        }
+        if(obj){
+            if(obj.hasOwnProperty('owner')){
+                this.owner = obj.owner
+            }
+        }
+      }
+    }
+
+    class Human {
+      constructor(prop) {
+        this.cool = false,
+        this.pet = function(Dog) {
+            Dog.status = "happy"
+    },
+        this.feed = function(Dog) {
+            Dog.hungry = false
+        }
+
+        if(prop){
+            if(prop.hasOwnProperty('cool')){
+                this.cool = prop.cool
+            }
+        }
+      }
+    }
+
+    //functions 
+
+    /*
     function Dog(obj) {
         this.color = "",
         this.status = "normal",
@@ -77,6 +128,7 @@ function it(description, contents){
             }
         }
     }
+    */
 
     
   
